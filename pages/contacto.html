@@ -8,12 +8,12 @@
     <link rel="shortcut icon" href="./assets/icons/shortcut-icon.svg">
 
     <!--CSS-->
-    <link rel="stylesheet" href="../css/styleGeneral.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/components/style-nav.css">
-    <link rel="stylesheet" href="../css/contacto.css">
-    <link rel="stylesheet" href="../css/components/footer2.css">
-    <link rel="stylesheet" href="../css/error404.css">
+    <link rel="stylesheet" href="./css/styleGeneral.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/components/style-nav.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/components/footer2.css">
+    <link rel="stylesheet" href="./css/error404.css">
     <!-- <link rel="stylesheet" href="/css/styles-login.css"> -->
 
     <!-- FONTAWESOME -->
@@ -28,7 +28,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 sticky-element" style="position: sticky; top: 0;">
             <div class="container-fluid nav-personalizado">
-                <a class="navbar-brand" href="../principal.html"><img src="../../assets/icons/LogoNegro.svg" width="50px" />ThunderGAMES</a>
+                <a class="navbar-brand" href="../principal.html"><img src="./../assets/icons/LogoNegro.svg" width="50px" />ThunderGAMES</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>		 
@@ -39,17 +39,17 @@
                               <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="../pages/aboutUs.html">Quienes Somos</a>
+                              <a class="nav-link" href="./pages/aboutUs.html">Quienes Somos</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">Categorías</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../pages/categoria/categoriaTerror.html">Terror</a></li>
-                                    <li><a class="dropdown-item" href="../pages/categoria/categoriaAccion.html">Acción</a></li>
-                                    <li><a class="dropdown-item" href="../pages/categoria/categoriaAventura.html">Aventura</a></li>
-                                    <li><a class="dropdown-item" href="../pages/categoria/categoriaDeporte.html">Deporte</a></li>
-                                    <li><a class="dropdown-item" href="../pages/categoria/categoriaBR.html">Battle Royale</a></li>
+                                    <li><a class="dropdown-item" href="./pages/categoria/categoriaTerror.html">Terror</a></li>
+                                    <li><a class="dropdown-item" href="./pages/categoria/categoriaAccion.html">Acción</a></li>
+                                    <li><a class="dropdown-item" href="./pages/categoria/categoriaAventura.html">Aventura</a></li>
+                                    <li><a class="dropdown-item" href="./pages/categoria/categoriaDeporte.html">Deporte</a></li>
+                                    <li><a class="dropdown-item" href="./pages/categoria/categoriaBR.html">Battle Royale</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -60,7 +60,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
@@ -68,7 +68,7 @@
                             <button class="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                         <div class="social-links iconos-nav">
-                            <a class="hover" href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="hover" href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
                             <a class="hover" href="#"><i class="fa-regular fa-heart"></i></a>
                             <a class="hover" href="#"><i class="fa-regular fa-gem"></i></a>
                         </div>		
@@ -162,8 +162,8 @@
                   <!-- IMG CONTAINER -->
                   <div class="img-container-login col d-flex justify-content-center align-items-center">
                     <div>
-                      <a href="../principal.html"><img class="logo-container-login"
-                          src="../assets/images/login/logoblanco-login.png" alt="logo-thunder" />
+                      <a href="./principal.html"><img class="logo-container-login"
+                          src="./assets/images/login/logoblanco-login.png" alt="logo-thunder" />
                       </a>
                     </div>
                   </div>
@@ -181,7 +181,7 @@
                       <!-- USERNAME -->
                       <div class="input-group pt-4">
                         <div class="input-group-text bg-dark">
-                          <img src="../assets/icons/login-user-icon.svg" alt="username-icon" style="height: 1rem" />
+                          <img src="./assets/icons/login-user-icon.svg" alt="username-icon" style="height: 1rem" />
                         </div>
                         <input class="form-control bg-light" type="text" minlength="2" maxlength="15" placeholder="Usuario" />
                       </div>
@@ -189,19 +189,19 @@
                       <!-- PASSWORD -->
                       <div class="input-group mt-1">
                         <div class="input-group-text bg-dark">
-                          <img src="../assets/icons/login-pass-icon.svg" alt="password-icon" style="height: 1rem" />
+                          <img src="./assets/icons/login-pass-icon.svg" alt="password-icon" style="height: 1rem" />
                         </div>
                         <input class="form-control bg-light" type="password" minlength="2" maxlength="15" placeholder="Contraseña" />
                       </div>
     
                       <!-- PASS RECOVERY -->
                       <div class="d-flex justify-content-end mt-1">
-                        <a href="../pages/error404.html" class="fw-semibold text-decoration-none"
+                        <a href="./pages/error404.html" class="fw-semibold text-decoration-none"
                           style="font-size: 0.9rem">Recuperar contraseña</a>
                       </div>
     
                       <!-- ACCEDER -->
-                      <form action="../pages/error404.html">
+                      <form action="./pages/error404.html">
                         <button type="submit" class="btn mt-3 btn-dark w-100 fw-semibold shadow-sm">
                           Acceder
                         </button>
@@ -211,7 +211,7 @@
                     <!-- REGISTRAR -->
                     <div class="d-flex gap-1 justify-content-center mt-1" style="font-size: 0.9rem">
                       <div>¿No tienes cuenta?</div>
-                      <a href="../pages/registro.html" class="fw-semibold text-decoration-none">Regístrate</a>
+                      <a href="./pages/registro.html" class="fw-semibold text-decoration-none">Regístrate</a>
                     </div>
     
                     <!-- O CONTINUAR CON: -->
@@ -221,20 +221,20 @@
     
                     <div class="login-google-face d-flex justify-content-center py-4 px-2 gap-2">
                       <!-- GOOGLE -->
-                      <a class="text-decoration-none" href="../pages/error404.html">
+                      <a class="text-decoration-none" href="./pages/error404.html">
                         <div class="google-login d-flex btn bg-light shadow-sm gap-3">
                           <div>
-                            <img src="../assets/icons/login-gg-icon.svg" alt="google-icon" style="height: 1.6rem" />
+                            <img src="./assets/icons/login-gg-icon.svg" alt="google-icon" style="height: 1.6rem" />
                           </div>
                           <div>Google</div>
                         </div>
                       </a>
     
                       <!-- FACE -->
-                      <a class="text-decoration-none" href="../pages/error404.html">
+                      <a class="text-decoration-none" href="./pages/error404.html">
                         <div class="face-login d-flex btn bg-light shadow-sm gap-3">
                           <div>
-                            <img src="../assets/icons/login-fb-icon.svg" alt="google-icon" style="height: 1.6rem" />
+                            <img src="./assets/icons/login-fb-icon.svg" alt="google-icon" style="height: 1.6rem" />
                           </div>
                           <div>Facebook</div>
                         </div>
