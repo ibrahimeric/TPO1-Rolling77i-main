@@ -1,0 +1,48 @@
+*{
+  text-transform: none !important;
+}
+
+.img-container-login {
+  background-image:
+    /* linear-gradient(rgba(38, 23, 32, 0.5), rgba(107, 80, 113, 0.1)),  */
+    url(../assets/images/Login/login-back1.png);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px 0 0 16px;
+}
+
+.logo-container-login {
+  height: 12rem;
+  padding: 1.2rem;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+  .img-container-login {
+    background-image: url(../assets/images/Login/login-back2.png);
+  }
+
+  .logo-container-login {
+    height: 9rem;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  .img-container-login {
+    background-image: url(../assets/images/Login/login-back3.png);
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .google-login {
+    flex-direction: column;
+  }
+
+  .face-login {
+    flex-direction: column;
+  }
+}

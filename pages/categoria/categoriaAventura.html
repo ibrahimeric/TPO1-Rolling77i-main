@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura | ThunderGames</title>
+    <link rel="shortcut icon" href="../assets/icons/shortcut-icon.svg">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/categoria.css">
+    <link rel="stylesheet" href="../../css/components/style-nav.css">
+    <link rel="stylesheet" href="../../css/components/footer2.css">
+    <link rel="stylesheet" href="../../css/login.css">
+
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@900&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 sticky-element" style="position: sticky; top: 0;">
+            <div class="container-fluid nav-personalizado">
+                <a class="navbar-brand" href="../../principal.html"><img src="../../assets/icons/LogoNegro.svg" width="50px">ThunderGAMES</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>		 
+                <section>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="../../pages/aboutUs.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Categorías</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./categoriaTerror.html">Terror</a></li>
+                                    <li><a class="dropdown-item" href="./categoriaAccion.html">Acción</a></li>
+                                    <li><a class="dropdown-item" href="./categoriaAventura.html">Aventura</a></li>
+                                    <li><a class="dropdown-item" href="./categoriaDeporte.html">Deporte</a></li>
+                                    <li><a class="dropdown-item" href="./categoriaBR.html">Battle Royale</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="">Consolas RETRO</a></li>
+                                    <li><a class="dropdown-item" href="">X-box</a></li>
+                                    <li><a class="dropdown-item" href="">PlayStation</a></li>
+                                    <li><a class="dropdown-item" href="">PC</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <div class="social-links iconos-nav">
+                            <a class="hover" href="../../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="hover" href=""><i class="fa-regular fa-heart"></i></a>
+                            <a class="hover" href=""><i class="fa-regular fa-gem"></i></a>
+                        </div>		
+                    </div>
+                </section>  
+            </div>  
+        </nav>
+    </header>
+    <!--Cuerpo-->
+        <!--Titulo-->
+        <section class="titulo-categoria">
+            <div class="titulo-categoria-txt">
+                <p id="titulo">Aventura</p>
+                <p id="descripcion">Embárcate en emocionantes viajes y descubre mundos llenos de misterio y maravillas en nuestra categoría de juegos de aventura. Explora tierras lejanas, resuelve acertijos desafiantes y vive emocionantes historias que te llevarán a lugares inimaginables. La aventura te espera a cada paso.</p>
+                <a href="#explorar"><button type="button" class="btn">Explorar</button></a>
+            </div>
+            
+            <img src="../../assets/images/categoria/aventura/aventura_p3.png" alt="aventura_portada" id="titulo-categoria-img">
+        </section>
+
+        <!--Selección de juegos-->
+        <section class="juegos-categoria" id="explorar">
+            <h2 class="text-center titulo-j">Juegos</h2>
+
+            <div class="contenedorGrid">
+                <!--Juego 1-->
+                <div class="juego juego1 juego-hover">
+                  <img src="../../assets/images/categoria/aventura/ulp_portada.png" alt="juego1" class="portadaJuego">
+                  <h4>Uncharted: El Legado Perdido</h4>
+                  <p>Uncharted: El Legado Perdido Standard Edition PS4 Digital</p>
+                  <a href="../juegos/detalleProductoFC24.html"><button type="button" class="btn">Ver</button></a>
+                </div>
+          
+                <!--Juego 2-->
+                <div class="juego juego2 juego-hover">
+                  <img src="../../assets/images/categoria/aventura/m_portada.png" alt="juego2" class="portadaJuego">
+                  <h4>Minecraft</h4>
+                  <p>Minecraft Latam</p>
+                  <a href="../juegos/detalleProductoFC24.html"><button type="button" class="btn">Ver</button></a>
+                </div>
+              </div>
+        </section>
+
+        <!--Multimedia juegos-->
+        <section class="multimedia">
+            <!--Introduccion-->
+            <div class="intro-multimedia">
+                <p id="titulo-m">Explora Mundos en Imágenes</p>
+                <p id="descripcion-m">Aventúrate en paisajes impresionantes y desafiantes a través de imágenes de juegos de aventura. Desde exóticas tierras hasta misteriosas cavernas, nuestra galería de multimedia te lleva a lugares inimaginables.</p>
+            </div>
+
+            <!--Carousel-->
+            <div class="cont-multimedia">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <!--    Imagenes Uncharted: El Legado Perdido    -->
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <div class="d-flex justify-content-center p-5">
+                                <img src="../../assets/images/categoria/aventura/carousel/ulp1.png" class="d-block w-50 pt-0 pb-6 img-carousel"
+                                    alt="ulp1">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="pieImagen-carousel">Uncharted: El Legado Perdido</h5>
+                                <p class="pieImagen-carousel">Desafia peligros y desentierra secretos y misterios antiguos</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="d-flex justify-content-center p-5">
+                                <img src="../../assets/images/categoria/aventura/carousel/ulp2.png" class="d-block w-50 pt-0 pb-6 img-carousel"
+                                    alt="ulp2">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="pieImagen-carousel">Uncharted: El Legado Perdido</h5>
+                                <p class="pieImagen-carousel">Nada puede detener a Chloe y Nadine en su implacable búsqueda</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="d-flex justify-content-center p-5">
+                                <img src="../../assets/images/categoria/aventura/carousel/ulp3.png" class="d-block w-50 pt-0 pb-6 img-carousel"
+                                    alt="ulp3">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="pieImagen-carousel">Uncharted: El Legado Perdido</h5>
+                                <p class="pieImagen-carousel">Supera obstáculos mortales en busca del legado perdido</p>
+                            </div>
+                        </div>
+
+                        <!--    Imagenes Minecraft    -->
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="d-flex justify-content-center p-5">
+                                <img src="../../assets/images/categoria/aventura/carousel/m1.png" class="d-block w-50 pt-0 pb-6 img-carousel"
+                                    alt="m1">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="pieImagen-carousel">Minecraft</h5>
+                                <p class="pieImagen-carousel">Explora, diviertete y conoce este extraño mundo de cubos</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="d-flex justify-content-center p-5">
+                                <img src="../../assets/images/categoria/aventura/carousel/m2.png" class="d-block w-50 pt-0 pb-6 img-carousel"
+                                    alt="m2">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="pieImagen-carousel">Minecraft</h5>
+                                <p class="pieImagen-carousel">Defiende tu fortaleza de las criaturas de Minecraft</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="d-flex justify-content-center p-5">
+                                <img src="../../assets/images/categoria/aventura/carousel/m3.png" class="d-block w-50 pt-0 pb-6 img-carousel"
+                                    alt="m3">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="pieImagen-carousel">Minecraft</h5>
+                                <p class="pieImagen-carousel">Crea tu propia leyenda en bloques en este gran mundo</p>
+                            </div>
+                        </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--Control de Paginación-->
+        <section class="control-paginacion p-5 d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item ps-2 pe-2"><a class="page-link btn" href="./categoriaTerror.html">Terror</a></li>
+                  <li class="page-item ps-2 pe-2"><a class="page-link btn" href="./categoriaAccion.html">Acción</a></li>
+                  <li class="page-item ps-2 pe-2"><a class="page-link btn" href="./categoriaAventura.html">Aventura</a></li>
+                  <li class="page-item ps-2 pe-2"><a class="page-link btn" href="./categoriaDeporte.html">Deportes</a></li>
+                  <li class="page-item ps-2 pe-2"><a class="page-link btn" href="./categoriaBR.html">Battle Royale</a></li>
+                </ul>
+                <span class="d-flex justify-content-center" id="paginacion-txt">Visita nuestras otras categorías</span>
+              </nav>
+        </section>
+    <!--Footer-->
+    <footer class="pie-de-pag">
+        <div class="contenedor-footer">
+          <div class="footer-row">
+            <div class="footer-links">
+              <h4>SOBRE NOSOTROS</h4>
+              <ul>
+                <li><a href="../pages/aboutUs.html">Nosotros</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+                <li><a href="../../pages/error404.html">Locales</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>AYUDA</h4>
+              <ul>
+                <li><a href="../../pages/error404.html">Preguntas Frecuentes</a></li>
+                <li><a href="../../pages/error404.html">Compras</a></li>
+                <li><a href="../../pages/error404.html">Envios</a></li>
+                <li><a href="../../pages/error404.html">Status de compra</a></li>
+                <li><a href="../../pages/error404.html">Pagos</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>SIGUENOS</h4>
+              <div class="enlace-red-social">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- INICIO MODAL -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content rounded-4 border border-secondary">
+            <!-- MODAL BODY -->
+            <div>
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- IMG CONTAINER -->
+                  <div class="img-container-login col d-flex justify-content-center align-items-center">
+                    <div>
+                      <a href="../../principal.html"><img class="logo-container-login"
+                          src="../../assets/images/login/logoblanco-login.png" alt="logo-thunder" />
+                      </a>
+                    </div>
+                  </div>
+    
+                  <!-- CONTENEDOR LOGIN -->
+                  <div class="main-container-login col">
+                    <!-- BOTON CERRAR -->
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="btn-close pt-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+                    <h2 class="text-center fw-semibold">Iniciar sesión</h2>
+    
+                    <div class="px-4">
+                      <!-- USERNAME -->
+                      <div class="input-group pt-4">
+                        <div class="input-group-text bg-dark">
+                          <img src="../../assets/icons/login-user-icon.svg" alt="username-icon" style="height: 1rem" />
+                        </div>
+                        <input class="form-control bg-light" type="text" minlength="2" maxlength="15" placeholder="Usuario" />
+                      </div>
+    
+                      <!-- PASSWORD -->
+                      <div class="input-group mt-1">
+                        <div class="input-group-text bg-dark">
+                          <img src="../../assets/icons/login-pass-icon.svg" alt="password-icon" style="height: 1rem" />
+                        </div>
+                        <input class="form-control bg-light" type="password" minlength="2" maxlength="15" placeholder="Contraseña" />
+                      </div>
+    
+                      <!-- PASS RECOVERY -->
+                      <div class="d-flex justify-content-end mt-1">
+                        <a href="../error404.html" class="fw-semibold text-decoration-none"
+                          style="font-size: 0.9rem">Recuperar contraseña</a>
+                      </div>
+    
+                      <!-- ACCEDER -->
+                      <form action="../error404.html">
+                        <button type="submit" class="btn mt-3 btn-dark w-100 fw-semibold shadow-sm">
+                          Acceder
+                        </button>
+                      </form>
+                    </div>
+    
+                    <!-- REGISTRAR -->
+                    <div class="d-flex gap-1 justify-content-center mt-1" style="font-size: 0.9rem">
+                      <div>¿No tienes cuenta?</div>
+                      <a href="../../pages/registro.html" class="fw-semibold text-decoration-none">Regístrate</a>
+                    </div>
+    
+                    <!-- O CONTINUAR CON: -->
+                    <div class="pt-4">
+                      <div class="text-center">o continuar con:</div>
+                    </div>
+    
+                    <div class="login-google-face d-flex justify-content-center py-4 px-2 gap-2">
+                      <!-- GOOGLE -->
+                      <a class="text-decoration-none" href="../error404.html">
+                        <div class="google-login d-flex btn bg-light shadow-sm gap-3">
+                          <div>
+                            <img src="../../assets/icons/login-gg-icon.svg" alt="google-icon" style="height: 1.6rem" />
+                          </div>
+                          <div>Google</div>
+                        </div>
+                      </a>
+    
+                      <!-- FACE -->
+                      <a class="text-decoration-none" href="../error404.html">
+                        <div class="face-login d-flex btn bg-light shadow-sm gap-3">
+                          <div>
+                            <img src="../../assets/icons/login-fb-icon.svg" alt="google-icon" style="height: 1.6rem" />
+                          </div>
+                          <div>Facebook</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN MODAL -->
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

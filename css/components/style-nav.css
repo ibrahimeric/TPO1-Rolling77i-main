@@ -1,0 +1,69 @@
+/*Navbar*/
+
+header {
+	box-sizing: border-box;
+	list-style: none;
+	position: sticky;
+	z-index: 1;
+}
+
+.desplegable{
+	position: sticky;
+	z-index: 1;
+}
+
+.nav-personalizado{	
+	background-color: lightblue;
+	width: 100%;
+}
+
+#navbarSupportedContent a {
+	color: inherit;
+	text-decoration: none;
+}
+  
+#navbarSupportedContent a:hover {
+	text-decoration: underline; /* Opcional: Restaura el subrayado al pasar el ratón sobre el enlace */
+} 
+  
+
+.search{
+	background-color: black;
+	padding: 4px 5px;
+	position: relative;
+	border: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 5px 5px 5px 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.search:hover{
+	background-color: darkgray;
+}	
+
+.iconos-nav{
+	padding: 10px 10px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.social-links a{
+	display: inline-block;
+	min-height: 40px;
+	width: 40px;
+	background-color: rgba(200, 200, 200, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #FFFFFF;
+	transition: all .5s ease;
+}
+
+.social-links a:hover {
+	background-color: #00C3FF;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu carrito | ThunderGames </title>
+    <link rel="shortcut icon" href="../assets/icons/shortcut-icon.svg">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/components/style-nav.css">
+    <link rel="stylesheet" href="../css/components/footer2.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="">
+    <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 sticky-element" style="position: sticky; top: 0;">
+                <div class="container-fluid nav-personalizado">
+                    <a class="navbar-brand" href="../principal.html"><img src="../../assets/icons/LogoNegro.svg" width="50px" />ThunderGAMES</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>		 
+                    <section>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../pages/aboutUs.html">Quienes Somos</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Categorías</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../pages/categoria/categoriaTerror.html">Terror</a></li>
+                                        <li><a class="dropdown-item" href="../pages/categoria/categoriaAccion.html">Acción</a></li>
+                                        <li><a class="dropdown-item" href="../pages/categoria/categoriaAventura.html">Aventura</a></li>
+                                        <li><a class="dropdown-item" href="../pages/categoria/categoriaDeporte.html">Deporte</a></li>
+                                        <li><a class="dropdown-item" href="../pages/categoria/categoriaBR.html">Battle Royale</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Consolas RETRO</a></li>
+                                        <li><a class="dropdown-item" href="#">X-box</a></li>
+                                        <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                                        <li><a class="dropdown-item" href="#">PC</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <button class="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <div class="social-links iconos-nav">
+                                <a class="hover" href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a class="hover" href="#"><i class="fa-regular fa-heart"></i></a>
+                                <a class="hover" href="#"><i class="fa-regular fa-gem"></i></a>
+                            </div>		
+                        </div>
+                    </section>  
+                </div>  
+            </nav>
+
+        <div class="d-flex flex-row justify-content-between align-items-center container-lg">
+            <h1>Tu carrito:</h1>
+            <button class="btn btn-outline-danger">Vaciar carrito</button>
+        </div>
+    </header>
+
+    <main class="d-flex  flex-column flex-lg-row align-items-center align-items-lg-start justify-content-start justify-content-lg-center col-12 mb-5 container-lg">
+
+        <section class="d-flex flex-column align-items-center justify-content-start col-12 col-lg-7 me-lg-4">
+
+            <article class="p-2 d-flex flex-row align-items-center border border-secondary rounded border-opacity-50 mt-3 col-12 position-relative">
+                <figure class="h-100 overflow-hidden col-4 col-lg-2 m-0 d-flex align-items-center justify-content-center">
+                    <img src="../assets/images/detalle/190993.jpg" alt="" class="col-12">
+                </figure>
+                <div class="col-8 col-lg-10 d-flex flex-column align-items-start justify-content-start h-100 container">
+                    <h4 class="mb-1">Titulo del juego</h4>
+                    <div class="d-flex flex-row align-items-center justify-content-center  mb-3">
+                        <p class="m-0 me-1">Categoria: </p>
+                        <div class="badge text-bg-secondary">Deportes</div>
+                    </div>
+                    <p>Precio: $35.000</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Cantidad" value="1" aria-label="Cantidades del juego ordenadas">
+                        <button class="btn btn-outline-secondary" type="button">-</button>
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                </div>
+                <button class="btn btn-danger position-absolute top-0 end-0 m-1" id="eliminar-articulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                      </svg>
+                </button>
+            </article>
+
+            <article class="p-2 d-flex flex-row align-items-center border border-secondary rounded border-opacity-50 mt-3 col-12 position-relative">
+                <figure class="h-100 overflow-hidden col-4 col-lg-2 m-0 d-flex align-items-center justify-content-center">
+                    <img src="../assets/images/detalle/190993.jpg" alt="" class="col-12">
+                </figure>
+                <div class="col-8 col-lg-10 d-flex flex-column align-items-start justify-content-start h-100 container">
+                    <h4 class="mb-1">Titulo del juego</h4>
+                    <div class="d-flex flex-row align-items-center justify-content-center  mb-3">
+                        <p class="m-0 me-1">Categoria: </p>
+                        <div class="badge text-bg-secondary">Deportes</div>
+                    </div>
+                    <p>Precio: $35.000</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Cantidad" value="1" aria-label="Cantidades del juego ordenadas">
+                        <button class="btn btn-outline-secondary" type="button">-</button>
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                </div>
+                <button class="btn btn-danger position-absolute top-0 end-0 m-1" id="eliminar-articulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                      </svg>
+                </button>
+            </article>
+
+            <article class="p-2 d-flex flex-row align-items-center border border-secondary rounded border-opacity-50 mt-3 col-12 position-relative">
+                <figure class="h-100 overflow-hidden col-4 col-lg-2 m-0 d-flex align-items-center justify-content-center">
+                    <img src="../assets/images/detalle/190993.jpg" alt="" class="col-12">
+                </figure>
+                <div class="col-8 col-lg-10 d-flex flex-column align-items-start justify-content-start h-100 container">
+                    <h4 class="mb-1">Titulo del juego</h4>
+                    <div class="d-flex flex-row align-items-center justify-content-center  mb-3">
+                        <p class="m-0 me-1">Categoria: </p>
+                        <div class="badge text-bg-secondary">Deportes</div>
+                    </div>
+                    <p>Precio: $35.000</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Cantidad" value="1" aria-label="Cantidades del juego ordenadas">
+                        <button class="btn btn-outline-secondary" type="button">-</button>
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                </div>
+                <button class="btn btn-danger position-absolute top-0 end-0 m-1" id="eliminar-articulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                      </svg>
+                </button>
+            </article>
+
+            <article class="p-2 d-flex flex-row align-items-center border border-secondary rounded border-opacity-50 mt-3 col-12 position-relative">
+                <figure class="h-100 overflow-hidden col-4 col-lg-2 m-0 d-flex align-items-center justify-content-center">
+                    <img src="../assets/images/detalle/190993.jpg" alt="" class="col-12">
+                </figure>
+                <div class="col-8 col-lg-10 d-flex flex-column align-items-start justify-content-start h-100 container">
+                    <h4 class="mb-1">Titulo del juego</h4>
+                    <div class="d-flex flex-row align-items-center justify-content-center  mb-3">
+                        <p class="m-0 me-1">Categoria: </p>
+                        <div class="badge text-bg-secondary">Deportes</div>
+                    </div>
+                    <p>Precio: $35.000</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Cantidad" value="1" aria-label="Cantidades del juego ordenadas">
+                        <button class="btn btn-outline-secondary" type="button">-</button>
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                </div>
+                <button class="btn btn-danger position-absolute top-0 end-0 m-1" id="eliminar-articulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                      </svg>
+                </button>
+            </article>
+
+        </section>
+
+        <section class="d-flex flex-column align-items-center justify-content-start col-12 col-lg-4 container-lg border border-secondary rounded border-opacity-50 mt-3">
+            <h3 class="">Detalle:</h3>
+            <div class="d-flex flex-column align-items-start justify-content-center w-100 mb-2">
+                <h4>Subtotal</h4>
+                <p class="border border-secondary rounded border-opacity-50 w-100 text-center h3 m-0 p-1">$95.400</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-start justify-content-center w-100 mb-2">
+                <h4>Recargos</h4>
+                <p class="border border-secondary rounded border-opacity-50 w-100 text-center h3 m-0 p-1">$0</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-start justify-content-center w-100 mb-2">
+                <h4>Descuentos</h4>
+                <p class="border border-secondary rounded border-opacity-50 w-100 text-center h3 m-0 p-1">$0</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-start justify-content-center w-100 mb-2">
+                <h4>Total</h4>
+                <p class="border border-success rounded border-opacity-50 w-100 text-center h3 m-0 p-1 text-success">$95.400</p>
+            </div>
+
+            <button class="btn btn-success w-100 btn-lg mt-3 mb-3"> Realizar compra</button>
+        </section>
+
+    </main>
+
+    <footer class="pie-de-pag">
+        <div class="contenedor-footer">
+          <div class="footer-row">
+            <div class="footer-links">
+              <h4>SOBRE NOSOTROS</h4>
+              <ul>
+                <li><a href="./pages/aboutUs.html">Nosotros</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/error404.html">Locales</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>AYUDA</h4>
+              <ul>
+                <li><a href="../pages/error404.html">Preguntas Frecuentes</a></li>
+                <li><a href="../pages/error404.html">Compras</a></li>
+                <li><a href="../pages/error404.html">Envios</a></li>
+                <li><a href="../pages/error404.html">Status de compra</a></li>
+                <li><a href="../pages/error404.html">Pagos</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>SIGUENOS</h4>
+              <div class="enlace-red-social">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+        <!-- INICIO MODAL -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content rounded-4 border border-secondary">
+                <!-- MODAL BODY -->
+                <div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <!-- IMG CONTAINER -->
+                      <div class="img-container-login col d-flex justify-content-center align-items-center">
+                        <div>
+                          <a href="../principal.html"><img class="logo-container-login"
+                              src="../assets/images/login/logoblanco-login.png" alt="logo-thunder" />
+                          </a>
+                        </div>
+                      </div>
+        
+                      <!-- CONTENEDOR LOGIN -->
+                      <div class="main-container-login col">
+                        <!-- BOTON CERRAR -->
+                        <div class="d-flex justify-content-end">
+                          <button type="button" class="btn-close pt-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+        
+                        <h2 class="text-center fw-semibold">Iniciar sesión</h2>
+        
+                        <div class="px-4">
+                          <!-- USERNAME -->
+                          <div class="input-group pt-4">
+                            <div class="input-group-text bg-dark">
+                              <img src="../assets/icons/login-user-icon.svg" alt="username-icon" style="height: 1rem" />
+                            </div>
+                            <input class="form-control bg-light" type="text" minlength="2" maxlength="15" placeholder="Usuario" />
+                          </div>
+        
+                          <!-- PASSWORD -->
+                          <div class="input-group mt-1">
+                            <div class="input-group-text bg-dark">
+                              <img src="../assets/icons/login-pass-icon.svg" alt="password-icon" style="height: 1rem" />
+                            </div>
+                            <input class="form-control bg-light" type="password" minlength="2" maxlength="15" placeholder="Contraseña" />
+                          </div>
+        
+                          <!-- PASS RECOVERY -->
+                          <div class="d-flex justify-content-end mt-1">
+                            <a href="../pages/error404.html" class="fw-semibold text-decoration-none"
+                              style="font-size: 0.9rem">Recuperar contraseña</a>
+                          </div>
+        
+                          <!-- ACCEDER -->
+                          <form action="../pages/error404.html">
+                            <button type="submit" class="btn mt-3 btn-dark w-100 fw-semibold shadow-sm">
+                              Acceder
+                            </button>
+                          </form>
+                        </div>
+        
+                        <!-- REGISTRAR -->
+                        <div class="d-flex gap-1 justify-content-center mt-1" style="font-size: 0.9rem">
+                          <div>¿No tienes cuenta?</div>
+                          <a href="../pages/registro.html" class="fw-semibold text-decoration-none">Regístrate</a>
+                        </div>
+        
+                        <!-- O CONTINUAR CON: -->
+                        <div class="pt-4">
+                          <div class="text-center">o continuar con:</div>
+                        </div>
+        
+                        <div class="login-google-face d-flex justify-content-center py-4 px-2 gap-2">
+                          <!-- GOOGLE -->
+                          <a class="text-decoration-none" href="../pages/error404.html">
+                            <div class="google-login d-flex btn bg-light shadow-sm gap-3">
+                              <div>
+                                <img src="../assets/icons/login-gg-icon.svg" alt="google-icon" style="height: 1.6rem" />
+                              </div>
+                              <div>Google</div>
+                            </div>
+                          </a>
+        
+                          <!-- FACE -->
+                          <a class="text-decoration-none" href="../pages/error404.html">
+                            <div class="face-login d-flex btn bg-light shadow-sm gap-3">
+                              <div>
+                                <img src="../assets/icons/login-fb-icon.svg" alt="google-icon" style="height: 1.6rem" />
+                              </div>
+                              <div>Facebook</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIN MODAL -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

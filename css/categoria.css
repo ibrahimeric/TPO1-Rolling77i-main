@@ -1,0 +1,210 @@
+body{
+    background-color: black;
+    text-transform: none !important;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(108,108,129);
+}
+
+.titulo-categoria, .juegos-categoria, .intro-multimedia, .control-paginacion{
+    background-color: black;
+    color: white;
+}
+
+#descripcion, .pieImagen-carousel, .card-text, #paginacion-txt{
+    color: blanchedalmond;
+    text-shadow: 3px 3px 3px #000;
+}
+
+/*Sección 1 - Título Categoría*/
+.titulo-categoria{
+    display: flex;
+    justify-content: right;
+
+    padding-top: 20px;
+}
+
+.titulo-categoria-txt{
+    width: 580px;
+    height: 450px;
+    background-color: #19191E;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: center;
+    padding-top: 3.5rem;
+    padding-left: 3rem;
+
+    position: absolute;
+    top: 150px;
+    left: 80px;
+ 
+    z-index: 1;
+}
+
+#titulo{
+    /* font-family: 'Instrument Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5rem;
+    padding-bottom: 20px;
+}
+
+#descripcion{
+    /* font-family: 'Instrument Sans', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+    width: 26rem;
+}
+
+#titulo-categoria-img{
+    width: 780px;
+    height: 550px;
+    padding-right: 120px;
+}
+
+.btn{
+    width: 8rem;
+    border-radius: 0%;
+    border-color: rgb(255, 235, 205);
+    background-color: rgb(108,108,129);
+}
+
+/*Sección 2 - Juegos*/
+.titulo-j{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+.juegos-categoria{
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+/* Grid */
+.contenedorGrid {
+    background-color: #00000085;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 5%;
+    padding-bottom: 1rem;
+    color: #19191E;
+}
+
+.juego1 {
+    background-color: rgb(21, 255, 0);
+    width: 20rem;
+}
+
+.juego2 {
+    background-color: rgb(208, 255, 0);
+    width: 20rem;
+}
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 164, 141);
+    text-align: center;
+    margin: 1rem 0;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.portadaJuego {
+    max-width: 80%;
+    height: 20rem;
+    padding-top: 1rem;
+}
+
+.contenedorGrid .juego h4 {
+    margin: 0.2rem 0;
+    font-size: 1.5rem;
+}
+
+.contenedorGrid .juego p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/*Sección 3 - Multimedia*/
+#titulo-m{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.7rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#descripcion-m{
+    width: 50rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.intro-multimedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-multimedia{
+    background-color: #19191E;
+
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    margin-left: 5%;
+}
+
+.carousel-item{
+    transition: transform 3s ease, opacity 1s ease-out;
+}
+
+/* .img-carousel{
+    width: 50%;
+    height: 25%;
+} */
+/*Sección 4 - Paginación*/
+
+/*Animaciones*/
+.titulo-categoria-txt{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition-duration: 1.7s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.titulo-categoria-txt:hover, .titulo-categoria-txt:focus, .titulo-categoria-txt:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.juego-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.juego-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+/*Excepciones*/
+.txt-blanco{
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #000;
+}
+.txt-shadow{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
+}

@@ -1,0 +1,30 @@
+/* Estilos del footer */
+.footer-grid {
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+}
+
+.footer-column {
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}

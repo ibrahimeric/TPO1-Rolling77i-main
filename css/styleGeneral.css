@@ -1,0 +1,12 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efebee;
+    height: 100vh;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
